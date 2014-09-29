@@ -586,7 +586,6 @@
         options.success = function(resp) {
             if (success) success(resp);
             resolve();
-            object.trigger('sync', object, resp, options);
         };
 
         var error = options.error;
